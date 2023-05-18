@@ -315,12 +315,20 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    min-width: 100%;
+    min-height: 100vh;
+  }
   .grid-parent {
     width: 38rem;
     min-height: 85vh;
   }
 }
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 501px), (max-width: 821px), (max-width: 913px) {
+  body {
+    min-width: 100%;
+    min-height: 100vh;
+  }
   .grid-parent {
     width: 24rem;
     height: auto;
